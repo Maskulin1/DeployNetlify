@@ -27,9 +27,8 @@ const EditPhoto = () => {
         console.log(data);
       })
       .catch((err) => {
-        console.log(err);
+        setError(err);
       });
-    setError("");
   };
 
   useEffect(() => {

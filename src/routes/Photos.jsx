@@ -19,6 +19,9 @@ const Photos = () => {
       .then((data) => {
         setPhotos(photos.filter((photo) => photo.id !== id));
         setLoading(!loading);
+      })
+      .catch((err) => {
+        setError(err);
       });
   };
 
